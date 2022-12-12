@@ -5,19 +5,15 @@ CREATE TABLE
         name TEXT,
         email TEXT,
         phone TEXT,
-        github VARCHAR,
+        github TEXT,
         start_date DATE,
         end_date DATE
     );
 
-    INSERT INTO
-    students (
-        id,
-        name,
-        email,
-        phone,
-        github,
-        start_date,
-        end_date,
-        cohort_id
-    )
+CREATE TABLE
+    cohorts (
+        id INT NOT NULL PRIMARY KEY,
+        name TEXT,
+        start_date DATE,
+        end_date DATE,
+    );
