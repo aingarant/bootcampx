@@ -1,6 +1,3 @@
-SELECT
-    students.name as student_name,
-    email, 
-    cohorts.name as cohort_name
-FROM cohorts
-    JOIN students ON cohort_id = cohorts.id;
+-- SELECT SUM(assignment_submissions.duration) AS total_time, student_id, students.name as student_name FROM assignment_submissions JOIN students ON student_id = students.id WHERE students.name = 'Ibrahim Schimmel' GROUP BY student_id, student_name;
+
+SELECT SUM(assignment_submissions.duration) AS total_time FROM assignment_submissions JOIN students ON student_id = students.id WHERE students.name = 'Ibrahim Schimmel';
