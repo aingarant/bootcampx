@@ -1,3 +1,4 @@
+-- Active: 1670863685890@@127.0.0.1@5432@bootcampx
 CREATE TABLE
     students (
         id INT NOT NULL PRIMARY KEY,
@@ -15,5 +16,5 @@ CREATE TABLE
         id INT NOT NULL PRIMARY KEY,
         name TEXT,
         start_date DATE,
-        end_date DATE,
+        end_date DATE
     );
